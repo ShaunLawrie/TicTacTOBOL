@@ -194,9 +194,8 @@
                        MOVE "FAIL" TO WS-MOVE-OUTCOME
                    END-IF
                END-IF
-
-      *        Check for winning condition
-               INITIALIZE WS-EOF
+               
+      *        Convert the grid to the same format as the winmask
                MOVE WS-GAME-GRID TO WS-FLAT-GAME-GRID
                IF HUMAN-PLAYER
                    INSPECT WS-FLAT-GAME-GRID REPLACING ALL "X" BY "1"
@@ -206,6 +205,9 @@
                    INSPECT WS-FLAT-GAME-GRID REPLACING ALL "O" BY "1"
                END-IF
                INSPECT WS-FLAT-GAME-GRID REPLACING ALL " " BY "0"
+               
+      *        Check for winning condition
+               INITIALIZE WS-EOF
                OPEN INPUT FD-WINMASKS
                PERFORM UNTIL EOF OR MOVE-COMPLETE
                    READ FD-WINMASKS NEXT RECORD
