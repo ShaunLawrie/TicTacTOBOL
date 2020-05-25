@@ -2,6 +2,8 @@
 
 This is just a version of Tic Tac Toe in COBOL. It's not a great language for this type of thing but I wanted to learn something 😜  
 
+For instructions on how to build and run this see [How to Play](https://github.com/BasiliusCarver/TicTacTOBOL#how-to-play) at the bottom of the readme.  
+
 I started by reading [this on tutorialspoint.com](https://www.tutorialspoint.com/cobol/) and hacking together bits and pieces 'til it worked, I didn't copy a version of this game from anywhere so it's a bit spaghetti because it was just how I understood the game to work.  
 
 Using a file to define win conditions wasn't a very efficient way to do it but I wanted to do some basic file operations to see how it worked. Using REDEFINE and breaking the functionality into more paragraphs could massively simplify this version.  
