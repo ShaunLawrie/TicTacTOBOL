@@ -27,6 +27,22 @@ You can compile COBOL in freeform with `cobc -free` which relaxes [the old punch
  - Webscale
 
 ## How to Play
+### Online
+Here's a version that kind of works but you have to make all the move choices in the STDIN tab. I quickly hacked together a version that works without a real terminal display or file operations so I could run it online http://tpcg.io/28wFoKOu.  
+Before you click "execute" paste some input into the STDIN tab e.g.
+```
+a1
+a2
+a3
+b1
+b2
+b3
+c1
+c2
+c3
+```
+### Locally
+This one uses a proper terminal display output and looks more like the gif above.  
 1. Install a cobol compiler  
 `sudo apt install open-cobol`  
 2. Compile the COBOL file  
