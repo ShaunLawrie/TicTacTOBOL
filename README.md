@@ -28,6 +28,9 @@ You can compile COBOL in freeform with `cobc -free` which relaxes [the old punch
 
 ## How to Play
 ### Online
+> **Warning**  
+> This no longer works online as they've taken away the STDIN tab on tpcg.io :(  
+
 Here's a version that kind of works but you have to make all the move choices ahead of time in the STDIN tab. I quickly hacked together a version that works without a real terminal display or file operations so I could run it online http://tpcg.io/28wFoKOu.  
 Before you click "execute" paste some input into the STDIN tab e.g.
 ```
